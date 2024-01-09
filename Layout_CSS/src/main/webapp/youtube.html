@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>youtube 따라만들기</title>
+<style>
+	* {
+		margin:0;
+		padding:0;
+	}
+	#sidebar {
+		float: left;
+		background-color: #e7e7e7;
+		width: 250px;
+		position: fixed;
+		left: 0;
+		right: 0;
+		height: 100vh;
+	}
+	#contents {
+		float: left;
+		margin: 0 30px;
+		width: calc(100% - 310px);
+		height: 5000px;
+		margin-left: 280px;
+	}
+	.clip  {
+		width: calc(25% - 30px);
+		float: left;
+		margin-right: 30px;
+	}
+	.clip > img {
+		width: 100%;
+	}
+	.owner {
+		display: flow-root;
+		letter-spacing: -1px;
+		margin-top: 15px;
+	}
+	.img_wrap {
+		float: left;
+		width: 40px;
+		height: 40px;
+		border-radius : 50%;
+		overflow: hidden;
+		margin-right: 15px;
+	}
+	.clip_title {
+		font-size: 16px;
+		font-weight: 500;
+	}
+	.clip_author, .clip_info {
+		margin-left: 55px;
+		color: #999;
+		font-size: 14px;
+	}
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="sidebar">사이드바</div>
+		<div id="contents">
+			<div class="clip">
+				<img src="https://picsum.photos/id/1/250/150" alt="썸네일">
+				<div class="owner">
+					<div class="img_wrap">
+						<img src="https://picsum.photos/60/60" alt="프로필사진">
+					</div>
+					<p class="clip_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<p class="clip_author">broadcast</p>
+					<p class="clip_info">87k views &middot; 4hours age</p>
+				</div>
+			</div>
+			<div class="clip">
+				<img src="https://picsum.photos/id/10/250/150" alt="썸네일">
+				<div class="owner">
+					<div class="img_wrap">
+						<img src="https://picsum.photos/40" alt="프로필사진">
+					</div>
+					<p class="clip_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<p class="clip_author">broadcast</p>
+					<p class="clip_info">87k views &middot; 4hours age</p>
+				</div>
+			</div>
+			<div class="clip">
+				<img src="https://picsum.photos/id/100/250/150" alt="썸네일">
+				<div class="owner">
+					<div class="img_wrap">
+						<img src="https://picsum.photos/60/60" alt="프로필사진">
+					</div>
+					<p class="clip_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<p class="clip_author">broadcast</p>
+					<p class="clip_info">87k views &middot; 4hours age</p>
+				</div>
+			</div>
+			<div class="clip">
+				<img src="https://picsum.photos/id/1000/250/150" alt="썸네일">
+				<div class="owner">
+					<div class="img_wrap">
+						<img src="https://picsum.photos/60/60" alt="프로필사진">
+					</div>
+					<p class="clip_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<p class="clip_author">broadcast</p>
+					<p class="clip_info">87k views &middot; 4hours age</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
