@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>당근마켓 클론코딩</title>
+<style>
+	* {margin:0; padding:0; box-sizing: border-box;}
+	a, a:link {text-decoration: none; color: #000;}
+	.d-flex {display: flex;}
+	.i-center {align-items: center;}
+	.j-between {justify-content: space-between;}
+	.j-center {justify-content: center;}
+	#header {width: 100%; height: 64px;}
+	.header_inner {width: 1200px;}
+	.logo {margin-right: 40px;}
+	.nav a {font-size: 18px; font-weight: 700; color: #4d5159; margin-right: 25px;}
+	.search {margin-left: auto;}
+	#search_word {width: 280px; height: 40px; padding: 0 15px; background-color: #f2f3f6; border: none; border-radius: 5px; font-size: 15px;}
+	.chat button {height: 40px; margin-left: 15px; background-color: #fff; border: 1px solid #d1d3d8; padding: 0 20px; border-radius: 5px; font-size: 16px; font-weight: 600;}
+	#store {background-color: #FFFAE0;}
+	.store_inner {width: 1200px;}
+	.store_box {padding-left: 40px;}
+	.store_box h2 {font-size: 54px; font-weight: 700;}
+	.store_box p {font-size: 20px; color: #777; margin: 40px 0;}
+	.store_box button {font-size: 16px; font-weight: 700; color: #fff; background-color: #FF6F0F; border-radius: 10px; border: none; width: 180px; height: 56px;}
+	.store_box button:hover {background-color: #f06000;}
+	.store_box button:last-child {margin-left: 10px;}
+	.img_box {width: 650px; margin-left: auto;}
+	.img_box img {width: 100%;}
+</style>
+</head>
+<body>
+	<div id="header" class="d-flex i-center j-center">
+		<div class="header_inner d-flex i-center">
+			<div class="logo">
+				<img src="carot-logo.png" alt="당근마켓">
+			</div>
+			<div class="nav">
+				<a href="#">중고거래</a>
+				<a href="#">동네업체</a>
+				<a href="#">알바</a>
+				<a href="#">부동산 직거래</a>
+				<a href="#">중고차 직거래</a>
+			</div>
+			<div class="search">
+				<input type="search" id="search_word" placeholder="물품이나 동네를 검색해보세요">
+			</div>
+			<div class="chat">
+				<button type="button">채팅하기</button>
+			</div>
+		</div>
+	</div>
+	<div id="store" class="d-flex i-center j-center">
+		<div class="store_inner d-flex i-center">
+			<div class="store_box">
+				<h2>당신 근처의<br>지역 생활 커뮤니티</h2>
+				<p>동네라서 가능한 모든 것<br>당근에서 가까운 이웃과 함께해요.</p>
+				<button type="button">Google Play</button>
+				<button type="button">App Store</button>
+			</div>
+			<div class="img_box">
+				<img src="carot-character.webp" alt="당근마켓 마스코트">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
