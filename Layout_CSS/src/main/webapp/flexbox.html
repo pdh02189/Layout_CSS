@@ -5,16 +5,24 @@
 <title>css 레이아웃 실습</title>
 <style>
 	.container {
-		border: 1px dashed #999;
-		display: inline-flex;
-		flex-direction: row;
 		width: 500px;
+		height: 300px;
+		border: 1px dashed #999;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 	
 	.item {
+		wdith: 50px;
+		height: 50px;
 		border: 1px solid #333;
 		padding: 1rem;
 		margin: .5rem;
+	}
+	.item2 {
+		align-self: center;
 	}
 </style>
 </head>
@@ -31,11 +39,6 @@
 	</ul>
 	
 	<h2>플렉스 박스 실습</h2>
-	<div class="container">
-		<div class="item item1">1</div>
-		<div class="item item2">2</div>
-		<div class="item item3">3</div>
-	</div>
 	<div class="container">
 		<div class="item item1">1</div>
 		<div class="item item2">2</div>
